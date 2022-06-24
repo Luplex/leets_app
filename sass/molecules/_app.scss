@@ -48,10 +48,18 @@
 
                 h4{
                     margin-top: 50px;
+                    margin-bottom: 50px;
                 }
             }
             section:hover{
                 background: #80eeff2f;;
+            }
+
+            .imgFonctionOne, .imgFonctionFour{
+                width: 80%;
+            }
+            .imgFonctionTwo, .imgFonctionThree{
+                width: 40%;
             }
         }
     }
@@ -332,6 +340,10 @@
             flex-wrap: wrap;
             width: 80%;
             margin: auto;
+        }
+
+        .correction{
+            transform: translateY(-40px);
         }
     }
 
