@@ -195,7 +195,6 @@ let texttl = gsap.timeline({
       id: "titreTerrain",
       end: "+=200%",
       scrub: true,
-      // pin: true 
   }
 })
 
