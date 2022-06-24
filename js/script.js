@@ -189,7 +189,7 @@ Dotl2.to(".dot", {
 let texttl = gsap.timeline({
   scrollTrigger: {
       trigger: ".dot",
-      markers:true,
+      // markers:true,
       start: "top",
       endTrigger: "#mainHeaderOne",
       id: "titreTerrain",
