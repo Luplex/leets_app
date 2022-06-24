@@ -1,0 +1,653 @@
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 2; }
+
+li {
+  list-style-type: none; }
+
+body {
+  overflow-x: hidden; }
+
+body {
+  cursor: grab; }
+
+#cursor1, #cursor2, #cursor3, #cursor4, #cursor5 {
+  height: 50px;
+  width: 50px;
+  background: #80EFFF;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  transition-timing-function: ease-out;
+  z-index: 6;
+  pointer-events: none; }
+
+#cursor2 {
+  background: #FFA680;
+  transition-duration: 0.07s;
+  z-index: 5; }
+
+#cursor3 {
+  background: #FFEA80;
+  transition-duration: 0.14s;
+  z-index: 4; }
+
+#cursor4 {
+  background: #9980FF;
+  transition-duration: 0.21s;
+  z-index: 3; }
+
+#cursor5 {
+  background: #80E3AD;
+  transition-duration: 0.28s;
+  z-index: 2; }
+
+.scroll {
+  height: 100%;
+  width: 8px;
+  background: #2121FB;
+  z-index: 6;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+#responsive {
+  background: #2121FB;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  max-width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+  display: none; }
+  #responsive .logoBis {
+    width: 60px;
+    margin-bottom: 30px; }
+  #responsive .TitreRes {
+    font-size: 30px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px; }
+  #responsive .Inscriptions {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px; }
+  #responsive a img {
+    width: 200px; }
+  #responsive .phoneRes {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  #responsive .mascotteRes {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+@media screen and (max-width: 900px) {
+  header, main, footer, div {
+    display: none; }
+
+  #responsive {
+    display: block; } }
+@font-face {
+  font-family: 'Matter';
+  src: url("../fonts/matter/Matter-Light.otf");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Matter';
+  src: url("../fonts/matter/Matter-Regular.otf");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Matter';
+  src: url("../fonts/matter/Matter-Medium.otf");
+  font-weight: 500; }
+@font-face {
+  font-family: 'Matter';
+  src: url("../fonts/matter/Matter-SemiBold.otf");
+  font-weight: 600; }
+@font-face {
+  font-family: 'Matter';
+  src: url("../fonts/matter/Matter-Bold.otf");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Matter';
+  src: url("../fonts/matter/Matter-Heavy.otf");
+  font-weight: 800; }
+@font-face {
+  font-family: 'Obviously';
+  src: url("../fonts/obviouslyVariable/ObviouslyVariable.ttf") format("trueType-variations");
+  font-weight: 600; }
+body {
+  font-family: 'Matter';
+  font-size: 17px;
+  font-weight: 400; }
+
+h1 {
+  font-weight: 600;
+  font-size: 64px; }
+
+h2 {
+  font-family: 'Obviously';
+  font-size: 160px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 130px; }
+
+#footer h2 {
+  font-size: 240px;
+  line-height: 190px; }
+
+h3 {
+  font-size: 42px;
+  font-weight: 500; }
+
+.fonctions {
+  font-size: 28px;
+  font-weight: 600; }
+
+.temoins {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff; }
+
+.temoins + p {
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff; }
+
+span {
+  font-size: 18px;
+  font-weight: 600; }
+
+p .temoignage, p strong {
+  font-size: 28px;
+  font-weight: 500; }
+
+.inscription {
+  font-size: 28px;
+  font-weight: 400; }
+
+.motCles {
+  font-size: 21px;
+  font-weight: 500; }
+
+#firstHeader {
+  height: 100vh; }
+  #firstHeader > div {
+    height: 80vh;
+    padding-top: 16px;
+    background: #FFF6F2;
+    border-bottom: 1px solid #171717;
+    z-index: 0; }
+  #firstHeader #barreHeader {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    #firstHeader #barreHeader a {
+      text-decoration: none;
+      position: relative;
+      padding: 5px 60px 5px 30px;
+      background: #2121FB;
+      color: #fff;
+      border-radius: 50px; }
+    #firstHeader #barreHeader a::after {
+      content: url(../img/fleche-droite.svg);
+      position: absolute;
+      top: 6.5px;
+      right: 20px; }
+  #firstHeader #top {
+    text-align: center;
+    margin-top: 86px; }
+    #firstHeader #top h1 {
+      margin-bottom: 60px; }
+
+#mainHeaderOne {
+  position: relative;
+  height: 180vh;
+  margin-bottom: 1800px; }
+  #mainHeaderOne .avatarContainer {
+    position: sticky;
+    top: -150px; }
+    #mainHeaderOne .avatarContainer .dot {
+      position: absolute;
+      top: 550px;
+      left: 48vw;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+      border-radius: 50%;
+      background-color: #9980FF;
+      z-index: 9; }
+    #mainHeaderOne .avatarContainer #localisation {
+      text-align: center; }
+      #mainHeaderOne .avatarContainer #localisation p, #mainHeaderOne .avatarContainer #localisation p::before, #mainHeaderOne .avatarContainer #localisation p::after, #mainHeaderOne .avatarContainer #localisation strong::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%); }
+      #mainHeaderOne .avatarContainer #localisation p {
+        top: 36vw; }
+      #mainHeaderOne .avatarContainer #localisation p::before, #mainHeaderOne .avatarContainer #localisation p::after, #mainHeaderOne .avatarContainer #localisation strong::before {
+        content: "";
+        width: 80vw;
+        height: 80vw;
+        border: 1px rgba(224, 217, 255, 0.7) solid;
+        border-radius: 1000px;
+        top: -36vw; }
+      #mainHeaderOne .avatarContainer #localisation p::after {
+        width: 60vw;
+        height: 60vw;
+        top: -26vw; }
+      #mainHeaderOne .avatarContainer #localisation strong::before {
+        width: 40vw;
+        height: 40vw;
+        top: -16vw; }
+    #mainHeaderOne .avatarContainer img {
+      width: 130px;
+      position: absolute; }
+    #mainHeaderOne .avatarContainer #personOne {
+      top: 20vw;
+      left: 20vw; }
+    #mainHeaderOne .avatarContainer #personTwo {
+      top: 60vw;
+      left: 50vw; }
+    #mainHeaderOne .avatarContainer #personThree {
+      top: 30vw;
+      left: 80vw; }
+    #mainHeaderOne .avatarContainer #personFour {
+      top: 10vw;
+      left: 60vw; }
+    #mainHeaderOne .avatarContainer #personFive {
+      top: 50vw;
+      left: 20vw; }
+
+#terrainMatch {
+  background: #9980FF;
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 3500px;
+  z-index: 10; }
+  #terrainMatch h2 {
+    color: #fff;
+    padding-top: 64px; }
+  #terrainMatch .dot2 {
+    position: absolute;
+    top: 1200px;
+    right: 45vw;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 12; }
+  #terrainMatch #preparation {
+    height: 100vh;
+    text-align: center;
+    position: relative; }
+    #terrainMatch #preparation .titreTerrain {
+      position: absolute;
+      opacity: 0;
+      top: -850px;
+      left: 0;
+      right: 0; }
+  #terrainMatch #donneTout {
+    margin-top: 300px;
+    padding-bottom: 40vw;
+    position: relative; }
+    #terrainMatch #donneTout p {
+      text-align: center; }
+    #terrainMatch #donneTout span {
+      color: #FFEA80; }
+    #terrainMatch #donneTout span::before {
+      content: url(../img/clicJaune.svg);
+      position: relative;
+      top: 3px;
+      right: 6px; }
+    #terrainMatch #donneTout #cercleTerrain {
+      width: 95vw;
+      height: 90vw;
+      border: #fff 5px solid;
+      border-radius: 50%;
+      position: absolute;
+      left: 2.5vw;
+      top: -28vw; }
+    #terrainMatch #donneTout #leetsGo, #terrainMatch #donneTout #peuxFaire, #terrainMatch #donneTout #encore, #terrainMatch #donneTout #repousse, #terrainMatch #donneTout #depasse, #terrainMatch #donneTout #mainPoing, #terrainMatch #donneTout #mainVictoire, #terrainMatch #donneTout #mainPouce {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50%; }
+      #terrainMatch #donneTout #leetsGo p, #terrainMatch #donneTout #leetsGo img, #terrainMatch #donneTout #peuxFaire p, #terrainMatch #donneTout #peuxFaire img, #terrainMatch #donneTout #encore p, #terrainMatch #donneTout #encore img, #terrainMatch #donneTout #repousse p, #terrainMatch #donneTout #repousse img, #terrainMatch #donneTout #depasse p, #terrainMatch #donneTout #depasse img, #terrainMatch #donneTout #mainPoing p, #terrainMatch #donneTout #mainPoing img, #terrainMatch #donneTout #mainVictoire p, #terrainMatch #donneTout #mainVictoire img, #terrainMatch #donneTout #mainPouce p, #terrainMatch #donneTout #mainPouce img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    #terrainMatch #donneTout #encore, #terrainMatch #donneTout #mainPoing {
+      background: #FFEA80;
+      left: 30vw;
+      top: 30vw; }
+    #terrainMatch #donneTout #encore {
+      transform: translate(35vw, -15vw); }
+    #terrainMatch #donneTout #mainPoing {
+      transform: translate(-15vw, -40vw); }
+    #terrainMatch #donneTout #peuxFaire, #terrainMatch #donneTout #repousse {
+      background: #80EFFF;
+      left: 60vw;
+      top: 60vw; }
+    #terrainMatch #donneTout #peuxFaire {
+      transform: translate(-55vw, -50vw); }
+    #terrainMatch #donneTout #repousse {
+      transform: translate(20vw, -60vw); }
+    #terrainMatch #donneTout #leetsGo, #terrainMatch #donneTout #mainPouce {
+      background: #FFA680;
+      left: 60vw;
+      top: 60vw; }
+    #terrainMatch #donneTout #leetsGo {
+      transform: translate(-40vw, -50vw); }
+    #terrainMatch #donneTout #mainPouce {
+      transform: translate(5vw, -25vw); }
+    #terrainMatch #donneTout #mainVictoire, #terrainMatch #donneTout #depasse {
+      background: #80E3AD;
+      left: 60vw;
+      top: 60vw; }
+    #terrainMatch #donneTout #mainVictoire {
+      transform: translate(-50vw, -30vw); }
+    #terrainMatch #donneTout #depasse {
+      transform: translate(5vw, -75vw); }
+  #terrainMatch #ligneTerrainVerticale {
+    width: 5px;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    left: 50%; }
+
+#app {
+  margin-top: 3600px; }
+  #app header {
+    text-align: center; }
+    #app header h2 {
+      font-size: 140px;
+      line-height: 110px; }
+  #app #fonctionnalites {
+    max-width: 80vw;
+    margin: 200px auto 200px auto; }
+    #app #fonctionnalites span {
+      color: #ADADAD;
+      margin-left: 10px; }
+    #app #fonctionnalites span::before {
+      content: url(../img/clicJaune.svg);
+      position: relative;
+      top: 3px;
+      right: 6px; }
+    #app #fonctionnalites #cartesFonctions {
+      margin-top: 64px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center; }
+      #app #fonctionnalites #cartesFonctions section:nth-child(1), #app #fonctionnalites #cartesFonctions section:nth-child(4) {
+        width: calc(100% / 3 - 6px); }
+      #app #fonctionnalites #cartesFonctions section:nth-child(2), #app #fonctionnalites #cartesFonctions section:nth-child(3) {
+        width: calc(100% / 3 * 2 - 6px); }
+      #app #fonctionnalites #cartesFonctions section:nth-child(3), #app #fonctionnalites #cartesFonctions section:nth-child(4) {
+        margin-top: 12px; }
+      #app #fonctionnalites #cartesFonctions section {
+        height: 500px;
+        background: rgba(211, 218, 218, 0.3);
+        border-radius: 30px; }
+        #app #fonctionnalites #cartesFonctions section h4 {
+          margin-top: 50px; }
+      #app #fonctionnalites #cartesFonctions section:hover {
+        background: #80eeff2f; }
+  #app #temoignages {
+    margin-bottom: 200px; }
+    #app #temoignages h3 {
+      max-width: 80vw;
+      margin: 0 auto; }
+    #app #temoignages ul {
+      margin-top: 50px;
+      display: flex;
+      overflow-y: auto;
+      transform: rotateZ(356deg);
+      height: 510px; }
+      #app #temoignages ul li {
+        width: 440px;
+        height: 500px;
+        margin-right: 24px;
+        position: relative;
+        border-radius: 30px;
+        transition: transform 0.2s;
+        transform-style: preserve-3d; }
+        #app #temoignages ul li img {
+          height: 100%; }
+        #app #temoignages ul li div .nom {
+          height: 150px;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          border-radius: 30px; }
+          #app #temoignages ul li div .nom .temoins {
+            margin-top: 29px; }
+          #app #temoignages ul li div .nom .temoins, #app #temoignages ul li div .nom p {
+            margin-left: 40px; }
+      #app #temoignages ul li:hover {
+        transform: rotateY(180deg); }
+      #app #temoignages ul li:last-child {
+        margin-right: 0; }
+      #app #temoignages ul #temoinOne {
+        background: #FFEA80; }
+        #app #temoignages ul #temoinOne div .nom {
+          background: #FFD600; }
+        #app #temoignages ul #temoinOne .flipCardBack p:first-child {
+          font-size: 120px;
+          font-weight: 700;
+          color: #FFEA80; }
+        #app #temoignages ul #temoinOne .flipCardBack p:nth-child(2) {
+          padding: 0 40px; }
+        #app #temoignages ul #temoinOne .flipCardBack p:last-child {
+          font-size: 17px;
+          font-weight: 500;
+          color: #fff;
+          padding: 15px 45px;
+          background: #FFEA80;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50px;
+          margin-top: 30px; }
+      #app #temoignages ul #temoinTwo {
+        background: #80EFFF; }
+        #app #temoignages ul #temoinTwo div .nom {
+          background: #00E0FF; }
+        #app #temoignages ul #temoinTwo .flipCardBack p:first-child {
+          font-size: 120px;
+          font-weight: 700;
+          color: #80EFFF; }
+        #app #temoignages ul #temoinTwo .flipCardBack p:nth-child(2) {
+          padding: 0 40px; }
+        #app #temoignages ul #temoinTwo .flipCardBack p:last-child {
+          font-size: 17px;
+          font-weight: 500;
+          color: #fff;
+          padding: 15px 45px;
+          background: #80EFFF;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50px;
+          margin-top: 30px; }
+      #app #temoignages ul #temoinThree {
+        background: #FFA680; }
+        #app #temoignages ul #temoinThree div .nom {
+          background: #FF5900; }
+        #app #temoignages ul #temoinThree .flipCardBack p:first-child {
+          font-size: 120px;
+          font-weight: 700;
+          color: #FFA680; }
+        #app #temoignages ul #temoinThree .flipCardBack p:nth-child(2) {
+          padding: 0 40px; }
+        #app #temoignages ul #temoinThree .flipCardBack p:last-child {
+          font-size: 17px;
+          font-weight: 500;
+          color: #fff;
+          padding: 15px 45px;
+          background: #FFA680;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50px;
+          margin-top: 30px; }
+      #app #temoignages ul #temoinFour {
+        background: #80E3AD; }
+        #app #temoignages ul #temoinFour div .nom {
+          background: #00C75B; }
+        #app #temoignages ul #temoinFour .flipCardBack p:first-child {
+          font-size: 120px;
+          font-weight: 700;
+          color: #80E3AD; }
+        #app #temoignages ul #temoinFour .flipCardBack p:nth-child(2) {
+          padding: 0 40px; }
+        #app #temoignages ul #temoinFour .flipCardBack p:last-child {
+          font-size: 17px;
+          font-weight: 500;
+          color: #fff;
+          padding: 15px 45px;
+          background: #80E3AD;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50px;
+          margin-top: 30px; }
+      #app #temoignages ul #temoinFive {
+        background: #9980FF; }
+        #app #temoignages ul #temoinFive div .nom {
+          background: #3300FF; }
+        #app #temoignages ul #temoinFive .flipCardBack p:first-child {
+          font-size: 120px;
+          font-weight: 700;
+          color: #9980FF; }
+        #app #temoignages ul #temoinFive .flipCardBack p:nth-child(2) {
+          padding: 0 40px; }
+        #app #temoignages ul #temoinFive .flipCardBack p:last-child {
+          font-size: 17px;
+          font-weight: 500;
+          color: #fff;
+          padding: 15px 45px;
+          background: #9980FF;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50px;
+          margin-top: 30px; }
+      #app #temoignages ul .flipCardFront, #app #temoignages ul .flipCardBack {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+      #app #temoignages ul .flipCardBack {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        border: 2px rgba(211, 218, 218, 0.3) solid;
+        border-radius: 30px; }
+  #app #pourquoiLeets > li {
+    height: 450px; }
+  #app #pourquoiLeets li {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    #app #pourquoiLeets li h3 {
+      margin-bottom: 30px; }
+    #app #pourquoiLeets li li:before {
+      content: url(../img/coche.svg);
+      width: 20px;
+      height: 20px;
+      background: #2121FB;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      line-height: 17px;
+      text-align: center; }
+    #app #pourquoiLeets li li {
+      line-height: 30px;
+      padding-left: 30px;
+      position: relative; }
+    #app #pourquoiLeets li > div {
+      width: 50%; }
+      #app #pourquoiLeets li > div div {
+        margin-top: 30px; }
+    #app #pourquoiLeets li img {
+      width: 30%;
+      margin-right: 100px; }
+  #app #pourquoiLeets .reverse {
+    flex-direction: row-reverse;
+    margin: 100px 0; }
+    #app #pourquoiLeets .reverse img {
+      margin-right: 0;
+      margin-left: 100px; }
+  #app #pourquoiLeets > ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto; }
+  #app footer {
+    margin: 30px 0 120px 0;
+    background: #FFF9D9;
+    text-align: center;
+    border-bottom: 1px solid #171717; }
+    #app footer h2 {
+      padding-top: 140px; }
+    #app footer img {
+      width: 842px;
+      margin-top: 20px;
+      margin-bottom: 200px; }
+
+#footer > div {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+  #footer > div section {
+    width: 50%; }
+    #footer > div section h2 {
+      text-align: left;
+      margin-bottom: 30px; }
+    #footer > div section span {
+      color: #ADADAD;
+      margin-left: 10px; }
+    #footer > div section span::before {
+      content: url(../img/clicGris.png);
+      position: relative;
+      top: 3px;
+      right: 6px; }
+  #footer > div img {
+    height: 415px;
+    margin-right: 150px; }
+  #footer > div a img {
+    height: 60px; }
+#footer > section {
+  margin-top: 70px;
+  padding: 25px 10vw 25px 10vw;
+  background: #2121FB;
+  display: flex;
+  justify-content: space-between; }
+  #footer > section img {
+    height: 36px; }
+  #footer > section a {
+    line-height: 36px;
+    color: #fff;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

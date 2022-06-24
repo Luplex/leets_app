@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+//Cursor
+body{
+    cursor: grab;
+}
+#cursor1, #cursor2, #cursor3, #cursor4, #cursor5{
+    height: 50px;
+    width: 50px;
+    background: $bleu;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    transition-timing-function: ease-out;
+    z-index: 6;
+    pointer-events: none;
+}
+#cursor2{
+    background: $orange;
+    transition-duration: 0.07s;
+    z-index: 5;
+}
+#cursor3{
+    background: $jaune;
+    transition-duration: 0.14s;
+    z-index: 4;
+}
+#cursor4{
+    background: $violet;
+    transition-duration: 0.21s;
+    z-index: 3;
+}
+#cursor5{
+    background: $vert;
+    transition-duration: 0.28s;
+    z-index: 2;
+}
+
+//Barre de défilement
+.scroll{
+    height: 100%;
+    width: 8px;
+    background: $bleuFonce;
+    z-index: 6;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#responsive{
+    background: $bleuFonce;
+    color: $blanc;
+    margin: auto;
+    text-align: center;
+    max-width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+
+    .logoBis{
+        width: 60px;
+        margin-bottom: 30px;
+    }
+
+    .TitreRes{
+        font-size: 30px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .Inscriptions{
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    a img{
+        width: 200px;
+    }
+    .phoneRes{
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .mascotteRes{
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    display: none;
+
+}
+
+@media screen and (max-width: 900px){
+    header, main, footer, div{
+        display: none;
+    }
+
+    #responsive{
+        display: block;
+    }
+}

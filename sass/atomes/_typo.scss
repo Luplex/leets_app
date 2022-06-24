@@ -1,0 +1,94 @@
+//Typo Matter + Graisses
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/matter/Matter-Light.otf");
+    font-weight: 300
+}
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/matter/Matter-Regular.otf");
+    font-weight: 400
+}
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/matter/Matter-Medium.otf");
+    font-weight: 500
+}
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/matter/Matter-SemiBold.otf");
+    font-weight: 600
+}
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/matter/Matter-Bold.otf");
+    font-weight: 700
+}
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/matter/Matter-Heavy.otf");
+    font-weight: 800
+}
+
+//Typo ObviouslyVariable
+@font-face {
+    font-family: 'Obviously';
+    src: url("../fonts/obviouslyVariable/ObviouslyVariable.ttf") format('trueType-variations');
+    font-weight: 600;
+}
+
+//Styles
+body{
+    font-family: 'Matter';
+    font-size: 17px;
+    font-weight: 400;
+}
+h1{
+    font-weight: 600;
+    font-size: 64px;
+}
+h2{
+    font-family: 'Obviously';
+    font-size: 160px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 130px;
+}
+#footer h2{
+    font-size: 240px;
+    line-height: 190px;
+}
+h3{
+    font-size: 42px;
+    font-weight: 500;
+}
+.fonctions{
+    font-size: 28px;
+    font-weight: 600;
+}
+.temoins{
+    font-size: 42px;
+    font-weight: 500;
+    color: $blanc;
+}
+.temoins + p{
+    font-size: 26px;
+    font-weight: 400;
+    color: $blanc;
+}
+span{
+    font-size: 18px;
+    font-weight: 600;
+}
+p .temoignage, p strong{
+    font-size: 28px;
+    font-weight: 500;
+}
+.inscription{
+    font-size: 28px;
+    font-weight: 400; 
+}
+.motCles{
+    font-size: 21px;
+    font-weight: 500;
+}

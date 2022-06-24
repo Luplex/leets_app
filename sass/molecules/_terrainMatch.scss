@@ -1,0 +1,133 @@
+
+#terrainMatch{
+    background: $violet;
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 3500px;
+    z-index: 10;
+
+    h2{
+        color: $blanc;
+        padding-top: 64px;
+    }
+    .dot2{
+    position: absolute;
+    top: 1200px;
+    right: 45vw;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: $blanc;
+    z-index: 12;
+}
+    #preparation{
+        height: 100vh;
+        text-align: center;
+        position: relative;
+        .titreTerrain{
+            position: absolute;
+            opacity: 0;
+            top:-850px;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    #donneTout{
+        margin-top: 300px;
+        padding-bottom: 40vw;
+        position: relative;
+        p{
+            text-align: center;
+        }
+    
+        span{
+            color: $jaune;
+        }
+    
+        span::before{
+            content: url(../img/clicJaune.svg);
+            position: relative;
+            top: 3px;
+            right: 6px;
+        }
+
+        #cercleTerrain{
+            width: 95vw;
+            height: 90vw;
+            border: $blanc 5px solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 2.5vw;
+            top: -28vw;
+        }
+
+        #leetsGo, #peuxFaire, #encore, #repousse, #depasse, #mainPoing, #mainVictoire, #mainPouce{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            border-radius: 50%;
+
+            p, img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        #encore, #mainPoing{
+            background: $jaune;
+            left: 30vw;
+            top: 30vw;
+        }
+        #encore{
+            transform: translate(35vw, -15vw);
+        }
+        #mainPoing{
+            transform: translate(-15vw, -40vw);
+        }
+        #peuxFaire, #repousse{
+            background: $bleu;
+            left: 60vw;
+            top: 60vw;
+        }
+        #peuxFaire{
+            transform: translate(-55vw, -50vw);
+        }
+        #repousse{
+            transform: translate(20vw, -60vw);
+        }
+        #leetsGo, #mainPouce{
+            background: $orange;
+            left: 60vw;
+            top: 60vw;
+        }
+        #leetsGo{
+            transform: translate(-40vw, -50vw);
+        }
+        #mainPouce{
+            transform: translate(5vw, -25vw);
+        }
+        #mainVictoire, #depasse{
+            background: $vert;
+            left: 60vw;
+            top: 60vw;
+        }
+        #mainVictoire{
+            transform: translate(-50vw, -30vw);
+        }
+        #depasse{
+            transform: translate(5vw, -75vw);
+        }
+    }
+
+    #ligneTerrainVerticale{
+        width: 5px;
+        background: $blanc;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+    }
+}

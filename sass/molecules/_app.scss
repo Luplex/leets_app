@@ -1,0 +1,354 @@
+#app{
+    margin-top: 3600px;
+
+    header{
+        text-align: center;
+
+        h2{
+            font-size: 140px;
+            line-height: 110px;
+        }
+    }
+
+    #fonctionnalites{
+        max-width: 80vw;
+        margin: 200px auto 200px auto;
+
+        span{
+            color: $gris;
+            margin-left: 10px;
+        }
+        span::before{
+            content: url(../img/clicJaune.svg);
+            position: relative;
+            top: 3px;
+            right: 6px;
+        }
+
+        #cartesFonctions{
+            margin-top: 64px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+
+            section:nth-child(1), section:nth-child(4){
+                width: calc(100% / 3 - 6px);
+            }
+            section:nth-child(2), section:nth-child(3){
+                width: calc(100% / 3 * 2 - 6px);
+            }
+            section:nth-child(3), section:nth-child(4){
+                margin-top: 12px;
+            }
+            section{
+                height: 500px;
+                background: $grisFondCarte;
+                border-radius: 30px;
+
+                h4{
+                    margin-top: 50px;
+                }
+            }
+            section:hover{
+                background: #80eeff2f;;
+            }
+        }
+    }
+
+    #temoignages{
+        margin-bottom: 200px;
+
+        h3{
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+
+        ul{
+            margin-top: 50px;
+            display: flex;
+            overflow-y: auto;
+            transform: rotateZ(356deg);
+            height: 510px;
+
+            li{
+                width: 440px;
+                height: 500px;
+                margin-right: 24px;
+                position: relative;
+                border-radius: 30px;
+
+                transition: transform 0.2s;
+                transform-style: preserve-3d;
+
+                img{
+                    height: 100%;
+                }
+                div .nom{
+                    height: 150px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 30px;
+
+                    .temoins{
+                        margin-top: 29px;
+                    }
+                    .temoins, p{
+                        margin-left: 40px;
+                    }
+                }
+            }
+
+            li:hover{
+                transform: rotateY(180deg);
+            }
+
+            li:last-child{
+                margin-right: 0;
+            }
+
+            #temoinOne{
+                background: $jaune;
+
+                div .nom{
+                    background: $jauneCard;
+                }
+
+                .flipCardBack p:first-child{
+                    font-size: 120px;
+                    font-weight: 700;
+                    color: $jaune;
+                }
+                .flipCardBack p:nth-child(2){
+                    padding: 0 40px;
+                }
+                .flipCardBack p:last-child{
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $blanc;
+                    padding: 15px 45px;
+                    background: $jaune;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50px;
+                    margin-top: 30px;
+                }
+            }
+            #temoinTwo{
+                background: $bleu;
+
+                div .nom{
+                    background: $bleuCard;
+                }
+
+                .flipCardBack p:first-child{
+                    font-size: 120px;
+                    font-weight: 700;
+                    color: $bleu;
+                }
+                .flipCardBack p:nth-child(2){
+                    padding: 0 40px;
+                }
+                .flipCardBack p:last-child{
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $blanc;
+                    padding: 15px 45px;
+                    background: $bleu;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50px;
+                    margin-top: 30px;
+                }
+            }
+            #temoinThree{
+                background: $orange;
+
+                div .nom{
+                    background: $orangeCard;
+                }
+
+                .flipCardBack p:first-child{
+                    font-size: 120px;
+                    font-weight: 700;
+                    color: $orange;
+                }
+                .flipCardBack p:nth-child(2){
+                    padding: 0 40px;
+                }
+                .flipCardBack p:last-child{
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $blanc;
+                    padding: 15px 45px;
+                    background: $orange;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50px;
+                    margin-top: 30px;
+                }
+            }
+            #temoinFour{
+                background: $vert;
+
+                div .nom{
+                    background: $vertCard;
+                }
+
+                .flipCardBack p:first-child{
+                    font-size: 120px;
+                    font-weight: 700;
+                    color: $vert;
+                }
+                .flipCardBack p:nth-child(2){
+                    padding: 0 40px;
+                }
+                .flipCardBack p:last-child{
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $blanc;
+                    padding: 15px 45px;
+                    background: $vert;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50px;
+                    margin-top: 30px;
+                }
+            }
+            #temoinFive{
+                background: $violet;
+
+                div .nom{
+                    background: $violetCard;
+                }
+
+                .flipCardBack p:first-child{
+                    font-size: 120px;
+                    font-weight: 700;
+                    color: $violet;
+                }
+                .flipCardBack p:nth-child(2){
+                    padding: 0 40px;
+                }
+                .flipCardBack p:last-child{
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $blanc;
+                    padding: 15px 45px;
+                    background: $violet;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50px;
+                    margin-top: 30px;
+                }
+            }
+
+            .flipCardFront, .flipCardBack {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+              
+            .flipCardBack {
+                transform: rotateY(180deg);
+                position: absolute;
+                top: 0;
+                text-align: center;
+                background: $blanc;
+                width: 100%;
+                height: 100%;
+                border: 2px $grisFondCarte solid;
+                border-radius: 30px;
+                
+              }
+        }
+    }
+
+    #pourquoiLeets{
+        > li{
+            height: 450px;
+        }
+
+        li{
+            width: 80vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+                margin-bottom: 30px;
+            }
+
+            li:before{
+                content: url(../img/coche.svg);
+                width: 20px;
+                height: 20px;
+                background: $bleuFonce;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 4px;
+                line-height: 17px;
+                text-align: center;
+            }
+            li{
+                line-height: 30px;
+                padding-left: 30px;
+                position: relative;
+            }
+
+            > div{
+                width: 50%;
+
+                div{
+                    margin-top: 30px;
+                }
+            }
+
+            img{
+                width: 30%;
+                margin-right: 100px;
+            }
+        }
+
+        .reverse{
+            flex-direction: row-reverse;
+            margin: 100px 0;
+
+            img{
+                margin-right: 0;
+                margin-left: 100px;
+            }
+        }
+
+        > ul{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    footer{
+        margin: 30px 0 120px 0;
+        background: $jauneFooter;
+        text-align: center;
+        border-bottom: 1px solid $noir;
+
+        h2{
+            padding-top: 140px;
+        }
+
+        img{
+            width: 842px;
+            margin-top: 20px;
+            margin-bottom: 200px;
+        }
+    }
+}

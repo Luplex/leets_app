@@ -1,0 +1,80 @@
+#mainHeaderOne{
+    position: relative;
+    height: 180vh;
+    margin-bottom: 1800px;
+  
+    .avatarContainer{
+        
+        position: sticky;
+        top:-150px;
+        .dot {
+            position: absolute;
+            top: 550px;
+            left: 48vw;
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+            border-radius: 50%;
+            background-color: $violet;
+            z-index: 9;
+          }
+        #localisation{
+            text-align: center;
+    
+            p, p::before, p::after, strong::before{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+    
+            p{
+                top: 36vw;
+            }
+    
+            p::before, p::after, strong::before{
+                content: "";
+                width: 80vw;
+                height: 80vw;
+                border: 1px $grisCercleLocalisation solid;
+                border-radius: 1000px;
+                top: -36vw;
+            }
+            p::after{
+                width: 60vw;
+                height: 60vw;
+                top: -26vw;
+            }
+            strong::before{
+                width: 40vw;
+                height: 40vw;
+                top: -16vw;  
+            }
+        }
+    
+        img{
+            width: 130px;
+            position: absolute;
+        }
+        #personOne{
+            top: 20vw;
+            left: 20vw;
+        }
+        #personTwo{
+            top: 60vw;
+            left: 50vw;
+        }
+        #personThree{
+            top: 30vw;
+            left: 80vw;
+        }
+        #personFour{
+            top: 10vw;
+            left: 60vw;
+        }
+        #personFive{
+            top: 50vw;
+            left: 20vw;
+        }
+    }
+    }
